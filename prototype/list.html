@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residents | Barangay San Rafael</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Barangay San Rafael</div>
+    <nav aria-label="Main navigation">
+      <a href="list.html">Residents</a>
+      <a href="#">Households</a>
+      <a href="#">Document Requests</a>
+      <a href="#">Officials</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-heading">
+      <div>
+        <h1>Residents</h1>
+        <p class="muted">View and manage registered barangay residents.</p>
+      </div>
+      <a class="btn" href="form.html">+ Add Resident</a>
+    </section>
+    <div class="toolbar">
+      <input class="search" type="search" name="search" placeholder="Search resident name..." aria-label="Search residents">
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Resident ID</th><th>Full name</th><th>Birth date</th><th>Sex</th><th>Civil status</th><th>House no.</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Antonio Dela Cruz</td><td>1975-03-15</td><td>Male</td><td>Married</td><td>1</td><td class="actions"><a class="action-link" href="#">Edit</a><a class="action-link" href="#">Delete</a></td></tr>
+          <tr><td>2</td><td>Elena Dela Cruz</td><td>1978-07-20</td><td>Female</td><td>Married</td><td>1</td><td class="actions"><a class="action-link" href="#">Edit</a><a class="action-link" href="#">Delete</a></td></tr>
+          <tr><td>3</td><td>Mark Dela Cruz</td><td>2005-11-05</td><td>Male</td><td>Single</td><td>1</td><td class="actions"><a class="action-link" href="#">Edit</a><a class="action-link" href="#">Delete</a></td></tr>
+          <tr><td>4</td><td>Sofia Garcia</td><td>1992-01-10</td><td>Female</td><td>Single</td><td>2</td><td class="actions"><a class="action-link" href="#">Edit</a><a class="action-link" href="#">Delete</a></td></tr>
+          <tr><td>5</td><td>Ramon Garcia</td><td>1980-06-25</td><td>Male</td><td>Married</td><td>3</td><td class="actions"><a class="action-link" href="#">Edit</a><a class="action-link" href="#">Delete</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="empty-state">
+      <strong>Empty state example</strong>
+      <p class="muted">No residents found. Try another search.</p>
+    </div>
+  </main>
+  <footer>Barangay San Rafael Document Services and Resident Records System</footer>
+</body>
+</html>

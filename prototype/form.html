@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Resident | Barangay San Rafael</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Barangay San Rafael</div>
+    <nav aria-label="Main navigation">
+      <a href="list.html">Residents</a>
+      <a href="#">Households</a>
+      <a href="#">Document Requests</a>
+      <a href="#">Officials</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Add Resident</h1>
+    <p class="muted">Enter the resident information below. Fields with * are required.</p>
+    <form class="form" action="#" method="post">
+      <div class="form-grid">
+        <div class="field">
+          <label for="first_name">First name <span class="required">*</span></label>
+          <input id="first_name" name="first_name" type="text" maxlength="50" required>
+        </div>
+        <div class="field">
+          <label for="last_name">Last name <span class="required">*</span></label>
+          <input id="last_name" name="last_name" type="text" maxlength="50" required>
+        </div>
+        <div class="field">
+          <label for="birth_date">Birth date <span class="required">*</span></label>
+          <input id="birth_date" name="birth_date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="sex">Sex <span class="required">*</span></label>
+          <select id="sex" name="sex" required>
+            <option value="">Choose sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="civil_status">Civil status <span class="required">*</span></label>
+          <select id="civil_status" name="civil_status" required>
+            <option value="">Choose civil status</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Widowed">Widowed</option>
+            <option value="Separated">Separated</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="contact_no">Contact number</label>
+          <input id="contact_no" name="contact_no" type="tel" maxlength="15">
+        </div>
+        <div class="field">
+          <label for="house_no">Household <span class="required">*</span></label>
+          <select id="house_no" name="house_no" required>
+            <option value="">Choose household</option>
+            <option value="1">House 1 – Rizal Street (Zone 1)</option>
+            <option value="2">House 2 – Rizal Street (Zone 1)</option>
+            <option value="3">House 3 – Mabini Street (Zone 1)</option>
+            <option value="4">House 4 – Mabini Street (Zone 2)</option>
+            <option value="5">House 5 – Bonifacio Street (Zone 2)</option>
+            <option value="6">House 6 – Bonifacio Street (Zone 3)</option>
+            <option value="7">House 7 – Luna Street (Zone 3)</option>
+            <option value="8">House 8 – Rizal Street (Zone 3)</option>
+          </select>
+        </div>
+      </div>
+      <p class="error">Example error: Please choose a household before saving.</p>
+      <div class="form-actions">
+        <button class="btn" type="submit">Save Resident</button>
+        <a class="btn-secondary" href="list.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+  <footer>Barangay San Rafael Document Services and Resident Records System</footer>
+</body>
+</html>
